@@ -1,0 +1,157 @@
+/* Universal Style */
+body {
+    font-family: 'PT Sans', sans-serif;
+    background: linear-gradient(90deg, #46A098 0%, #54A654 100%);
+}
+/* Utility Classes */
+.container {
+    padding: 0 1rem;
+}
+
+.inner-container {
+    padding: 0.75rem;
+}
+/* Header */
+header {
+    background: #9846A0;
+    height: 11rem;
+    padding: 1.375rem 0 0.6875rem 0;
+    margin-bottom: 2.75rem;
+}
+#logo {
+    width: 30%;
+    margin-top: -7rem;
+}
+.shop {
+    display: flex;
+    max-width: 1820px;
+    justify-self: flex-end;
+}
+/* Main Content */
+h1 {
+    width: 30rem;
+    color: #fff;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+}
+h1 span {
+    font-size: 3.25rem;
+    font-size: bolder;
+}
+
+p {
+    font-size: 1.5rem;
+    width: 42.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 50px;
+}
+
+nav a:hover {
+    background-color: #f0f0f0;
+
+}
+
+.sidebar {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    height: 100vh;
+    z-index: 999;
+    background-color: #9846A0;
+    }
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.button {
+    background-color: #793880;
+    max-width: 14.25rem;
+    align-self: flex-start;
+    border: 1px;
+    padding: 1rem 1rem;
+}
+
+.button a {
+    transition: all 0.3s;
+    text-decoration: none;
+    color: #fff;
+}
+
+.button a:hover {
+    color: #793880;
+}
+.menu-button {
+    display: none;
+}
+/* Media Queries */
+@media screen and (max-width: 320px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    img:nth-of-type(2) {
+        justify-self: center;
+    }
+}
+
+@media screen and (min-width: 1820px) {
+   #logo {
+        margin-bottom: 2.25rem;
+        width: 15%;
+    }
+
+    nav ul {
+        max-width: 1820px;
+        justify-content: flex-end;
+        gap: 2.5rem;
+    }
+
+    nav a {
+        margin-top: -8.25rem;
+        font-size: 2.25rem;
+    }
+
+    .shop {
+        padding: 2.5rem;
+    }
+}
